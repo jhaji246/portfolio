@@ -31,6 +31,14 @@ export default function Footer() {
               Projects
             </a>
             <a
+              href="https://leetcode.com/u/abhilashjha264/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+            >
+              LeetCode
+            </a>
+            <a
               href="#contact"
               className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             >

@@ -185,10 +185,23 @@ export default function Hero() {
               </svg>
             </motion.a>
             <motion.a
+              href="https://leetcode.com/u/abhilashjha264/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+              aria-label="LeetCode"
+              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.159 3.556A1.903 1.903 0 0 0 6.5 11.5h2.5v8a1.5 1.5 0 0 0 3 0v-8h2.5a1.903 1.903 0 0 0 2.543-2.718l-3.159-3.556L14.44.438A1.374 1.374 0 0 0 13.483 0zM12 6.5l2.5 2.5h-5L12 6.5zm-7.5 9a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0-1.5-1.5zm15 0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0-1.5-1.5z"/>
+              </svg>
+            </motion.a>
+            <motion.a
               href="mailto:abhilashjha264@gmail.com"
               className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
               aria-label="Email"
-              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileHover={{ scale: 1.2, rotate: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <svg
