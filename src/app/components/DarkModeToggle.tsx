@@ -2,28 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useTheme } from "./ThemeProvider";
-import { useEffect, useState } from "react";
 
 export default function DarkModeToggle() {
-  const [mounted, setMounted] = useState(false);
-  
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Don't render until mounted to avoid hydration mismatch
-  if (!mounted) {
-    return (
-      <div className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center">
-        <div className="w-6 h-6" />
-      </div>
-    );
-  }
-
-  return <DarkModeToggleContent />;
-}
-
-function DarkModeToggleContent() {
   const { theme, toggleTheme } = useTheme();
 
   return (
