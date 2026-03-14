@@ -1,1 +1,45 @@
-[00:00:01.972] Server  LOG     ✓ Ready in 1277ms
+[00:00:01.270] Server  LOG     ✓ Ready in 900ms
+[00:01:05.184] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:01:05.825] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+      <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+        <LoadingBoundary name="/" loading={null}>
+          <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url={"/?id=fa6..."} tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="page.tsx">
+                      <SegmentTrieNode>
+                      <Home>
+                        <CustomCursor>
+                        <Home>
+                          <ScrollProgress>
+                            <motion.div className="fixed top-..." style={{scaleX:{...}}}>
+                              <div
++                               className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600..."
+-                               className="fixed top-0 left-0 w-8 h-8 rounded-full border-2 border-blue-500 pointer-ev..."
+                                style={{
++                                 transform: "scaleX(0)"
+-                                 transform: "translateX(-100px) translateY(-100px)"
+-                                 opacity: "0"
+                                }}
+                                ref={function useMotionRef.useCallback}
+                              >
+                        ...
+                    ...
+                  ...
+      ...
+
